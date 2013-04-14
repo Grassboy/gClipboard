@@ -18,6 +18,7 @@ A firefox add-on that can read/write your system clipboard
   * set clipboard: gClipboard([string/number/boolean/object])
     * set the contents of clipboard
     * if the type of argument is object, it will convert to string format by JSON.stringify()
+
 ### Configuration:
   * You can configure this add-on in the add-on setting page, the following is the options of this add-on
   * confirm message: (on/off)
@@ -55,6 +56,7 @@ gClipboard
   * 設定剪貼簿: gClipboard([string/number/boolean/object])
     * 將您要複製的內容丟到 gClipboard 即可
     * 如果傳入的參數是 javascript 物件，它會透過 JSON.stringify() 轉成字串後才進行複製
+
 ### Configuration:
   * 您可以在附加元件設定頁中，對此 add-on 進行設定，以下是您可以設定的項目
   * 確認訊息: (on/off)
