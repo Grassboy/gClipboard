@@ -3,8 +3,8 @@
 	"license": "MIT License",
 	"author": "小胖子．草兒 Grassboy @plurk.com/xuite.net",
 	"contributors": ["Addon Icon: Deleket (Jojo Mendoza)"],
-	"version": "0.2",
-	"homepage": "http://grassboy.tw/Firefox/about.php",
+	"version": "0.3",
+	"homepage": "http://grassboy.tw/Firefox/gClipboard/about.php",
 
 	"fullName": "Grassboy Clipboard",
 	"id": "jid1-waViH92bZ6IdCA",
@@ -37,7 +37,7 @@
 	},{
 		"name": "authToken",
 		"title": "自動允許授權碼 (authToken)",
-		"description": "您可設定一組授權碼，未來當這組授權碼作為第二個參數傳入 gClipboard 函數時，即便目前網域不在上面的自動允許清單中，也可以無條件略過警告訊息，\r\n\r\n例如：當授權碼為 'a1b2c3d4' 時，\r\ngClipboard('hello', 'a1b2c3d4') 會在無警告訊息的狀況下將 hello 複製至剪貼簿\r\n若授權碼為空白，表示不得略過警告訊息",
+		"description": "您可設定一組授權碼，未來當這組授權碼作為第二個參數傳入 gClipboard 函數時，即便目前網域不在上面的自動允許清單中，也可以無條件略過警告訊息。\r\n\r\n例如：當授權碼為 'a1b2c3d4' 時，\r\ngClipboard('hello', 'a1b2c3d4') 會在無警告訊息的狀況下將 hello 複製至剪貼簿\r\n若授權碼為空白，表示不得略過警告訊息",
 		"type": "string",
 		"value": ""
 	}]
