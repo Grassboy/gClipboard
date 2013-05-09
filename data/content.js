@@ -47,7 +47,7 @@ self.port.on(prefix+"init", function(pref){
 			try {
 				str = JSON.stringify(arguments[0]);
 			} catch(e) {
-				console.error(e.toString());
+				alert(e.toString());
 				return;
 			}
 			break;
@@ -65,7 +65,7 @@ self.port.on(prefix+"init", function(pref){
 			].join(''))
 		) throw "gClipboard 存取遭拒";
 		eventQueue[event_id] = function(result){
-			console.info(["[gClipboard] 系統剪貼簿已設定成功，設定的內容結尾為: " + result.substr(-50)].join(''));
+			return;
 		};
 		self.port.emit(prefix+"set", event_id, str);
 	};
