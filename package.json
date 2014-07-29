@@ -8,9 +8,12 @@
 
 	"fullName": "Grassboy Clipboard",
 	"id": "jid1-waViH92bZ6IdCA",
-	"icon": "icons\\icon48.png",
-	"icon64": "icons\\icon64.png",
+	"icon": "icons/icon48.png",
+	"icon64": "icons/icon64.png",
 	"description": "提供一個函數可以存取系統的剪貼簿\r\n gClipboard 使用方式： gClipboard([function]): 取得系統剪貼簿的內容，並傳回至 callback function; \r\n gClipboard([string/number/object], [authToken]): 將 [string/number/object] 複製至系統剪貼簿 \n\tauthToken 可不指定，但若 authToken 與系統設定的相同，則無條件略過確認訊息",
+    "permissions": {
+        "unsafe-content-script": true
+    },
 	"preferences": [{
 		"name": "showConfirm",
 		"title": "顯示警告訊息？",
