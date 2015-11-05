@@ -1,0 +1,4 @@
+*.xpi
+.git/**
+README.md
+.jpmignore

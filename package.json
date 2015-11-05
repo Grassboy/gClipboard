@@ -3,16 +3,18 @@
 	"license": "MIT License",
 	"author": "小胖子．草兒 Grassboy @plurk.com/xuite.net",
 	"contributors": ["Addon Icon: Deleket (Jojo Mendoza)"],
-	"version": "0.5",
+	"version": "0.5.1",
 	"homepage": "http://grassboy.tw/Firefox/gClipboard/about.php",
 
 	"fullName": "Grassboy Clipboard",
-	"id": "jid1-waViH92bZ6IdCA",
+	"id": "jid1-waViH92bZ6IdCA@jetpack",
 	"icon": "icons/icon48.png",
 	"icon64": "icons/icon64.png",
 	"description": "提供一個函數可以存取系統的剪貼簿\r\n gClipboard 使用方式： gClipboard([function]): 取得系統剪貼簿的內容，並傳回至 callback function; \r\n gClipboard([string/number/object], [authToken]): 將 [string/number/object] 複製至系統剪貼簿 \n\tauthToken 可不指定，但若 authToken 與系統設定的相同，則無條件略過確認訊息",
+	"main": "lib/main.js",
     "permissions": {
-        "unsafe-content-script": true
+        "unsafe-content-script": true,
+        "private-browsing": true
     },
 	"preferences": [{
 		"name": "showConfirm",
