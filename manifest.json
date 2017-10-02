@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+	"name": "Grassboy Clipboard",
+	"author": "小胖子．草兒 Grassboy @plurk.com/xuite.net",
+	"description": "提供一個函數可以存取系統的剪貼簿\n gClipboard 使用方式： gClipboard([function]): 取得系統剪貼簿的內容(會有確認訊息)，並傳回至 callback function;\n gClipboard([string/number/object]): 將 [string/number/object] 複製至系統剪貼簿(會有確認訊息)\n\n授權方式: MIT License\nAddon Icon Credit: Deleket (Jojo Mendoza)",
+	"version": "0.57.1",
+    "homepage_url": "https://github.com/Grassboy/gClipboard57/",
+    "icons": {
+        "48": "icons/icon48.png",
+        "64": "icons/icon64.png"
+    },
+    "permissions": [
+        "<all_urls>",
+        "clipboardWrite",
+        "clipboardRead"
+    ],
+    "applications": {
+        "gecko": {
+            "id": "jid1-waViH92bZ6IdCA@jetpack"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["main.js"]
+    }]
+}
+
